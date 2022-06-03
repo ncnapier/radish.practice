@@ -1,0 +1,155 @@
+html {
+    font-size: 62.5%;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    height: 200px;
+    background-color: rgb(3, 75, 72);
+    
+}
+
+header section, header ul {
+    display: flex;
+}
+
+header section + section{
+    width: 70%;
+}
+
+header *  {
+    
+    text-decoration: none;
+    list-style: none;
+    color: pink
+}
+
+
+
+header > section + section {
+    justify-content: space-evenly;
+    
+}
+
+header > section + section li {
+    margin: auto 10px;
+    flex-shrink: 1;
+}
+header h1 {
+    margin: auto 10px;
+}
+
+h1 {
+    font-size: 8rem;
+}
+
+ul li a {
+    font-size: 1.2rem;
+}
+
+header + section {
+    height: 375px;
+    text-align: center;
+    display: flex;
+    background-color: pink;
+    
+}
+
+header + section * {
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    font-size: 6rem;
+
+    
+}
+header + section h2 {
+    border-bottom: 1px solid white;
+}
+
+main {
+    display: flex;
+    /*border: 1px solid black;*/
+    background-color: rgb(3, 75, 72);
+    color: white
+}
+.secCol {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+main * {
+    text-align: center;
+}
+
+main h3 {
+    color: pink;
+    font-size: 2rem;
+}
+
+#ten {
+    font-size: 3rem;
+
+}
+
+#inc {
+    font-size: 2rem;
+
+}
+
+#btd {
+    font-size: 1.5rem;
+
+}
+
+.pink {
+    color: pink;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    width: 16.6666%;
+}
+
+#buildYourOwn > section {
+    height: 150px;
+}
+
+.block {
+    height: 200px;
+}
+
+.head {
+    height: 30px;
+    border-bottom: 2px solid pink;
+    
+}
+
+.head h3 {
+    margin: auto;
+}
+main section {
+    /*border: 1px solid black;*/
+}
+
+main img {
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+    .col {
+        width: 100%;
+        text-align: center;
+    }
+    main img {
+        width: 200px;
+    }
+}
+
