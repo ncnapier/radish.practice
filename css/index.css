@@ -16,8 +16,13 @@ header section, header ul {
     flex-shrink: 1;
 }
 
-header section + section{
+#nav {
+    display: flex;
     width: 70%;
+}
+#rad {
+    display: flex;
+    width: 30%;
 }
 
 header *  {
@@ -34,12 +39,12 @@ header section ul {
     padding-left: none;
 }
 
-header > section + section {
+#nav {
     justify-content: space-evenly;
     
 }
 
-header > section + section li {
+header section li {
     margin: auto 1rem;
     flex-shrink: 1;
 }
@@ -161,7 +166,13 @@ main img {
     border: 1px solid pink !important;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+    .hide {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
     main {
         flex-direction: column;
     }
