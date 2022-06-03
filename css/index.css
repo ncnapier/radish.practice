@@ -13,6 +13,7 @@ header {
 
 header section, header ul {
     display: flex;
+    flex-shrink: 1;
 }
 
 header section + section{
@@ -20,13 +21,18 @@ header section + section{
 }
 
 header *  {
-    
+    display: flex;
     text-decoration: none;
     list-style: none;
     color: pink
 }
-
-
+header section {
+    display: flex;
+}
+header section ul {
+    display: flex;
+    padding-left: none;
+}
 
 header > section + section {
     justify-content: space-evenly;
@@ -34,19 +40,20 @@ header > section + section {
 }
 
 header > section + section li {
-    margin: auto 10px;
+    margin: auto 1rem;
     flex-shrink: 1;
 }
 header h1 {
-    margin: auto 10px;
+    margin: auto 1rem;
 }
 
 h1 {
-    font-size: 8rem;
+    font-size: 8vw;
 }
 
 ul li a {
-    font-size: 1.2rem;
+    font-size: 1vw;
+    display: flex;
 }
 
 header + section {
@@ -69,6 +76,10 @@ header + section h2 {
     border-bottom: 1px solid white;
 }
 
+header section {
+    display: flex;
+}
+
 main {
     display: flex;
     /*border: 1px solid black;*/
@@ -79,7 +90,7 @@ main {
     display: flex;
     flex-direction: column;
     text-align: center;
-    https://ncnapier.github.io/radish_practice/
+    
 }
 
 main * {
@@ -128,7 +139,13 @@ main h3 {
     border-bottom: 2px solid pink;
     
 }
-
+#byob {
+    display: flex;
+    flex-direction: column;
+}
+#byob span {
+    font-size: 2.5rem;
+}
 .head h3 {
     margin: auto;
 }
@@ -138,6 +155,10 @@ main section {
 
 main img {
     width: 100%;
+}
+
+.secCol   {
+    border: 1px solid pink !important;
 }
 
 @media screen and (max-width: 600px) {
